@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import heroBackground from "@/assets/hero-background.jpg";
-import logo from "@/assets/logo.png";
 
 export const Hero = () => {
   const [email, setEmail] = useState("");
@@ -53,7 +52,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
@@ -63,20 +62,20 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="max-w-3xl">
-          {/* Logo */}
-          <div className="mb-8">
-            <img src={logo} alt="Hunting Promos SA" className="h-24 md:h-32 w-auto" />
-          </div>
-
+      <div className="relative z-10 container mx-auto px-4 py-16 md:py-20">
+        <div className="max-w-2xl">
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
-            Get Exclusive Hunting Deals Before Anyone Else
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight">
+            Hunting Promos SA
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
+          <h2 className="text-2xl md:text-3xl font-heading text-white mb-4">
+            Get Exclusive Hunting Deals Before Anyone Else
+          </h2>
+
+          {/* Description */}
+          <p className="text-lg md:text-xl text-white/90 mb-8">
             Join thousands of South African hunters getting weekly gear promos and giveaways.
           </p>
 
@@ -111,13 +110,6 @@ export const Hero = () => {
               No spam. Unsubscribe anytime. 100% free.
             </p>
           </form>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2" />
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   const [email, setEmail] = useState("");
@@ -54,12 +53,11 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <div className="mb-8">
-            <img src={logo} alt="Hunting Promos SA" className="h-20 w-auto mx-auto mb-6" />
             <h3 className="text-2xl md:text-3xl font-heading font-bold mb-4">
               Never Miss a Deal Again
             </h3>
             <p className="text-white/70 mb-6">
-              Last chance to join – weekly deals start this Monday.
+              Last chance to join — weekly deals start this Monday.
             </p>
           </div>
 
@@ -83,10 +81,10 @@ export const Footer = () => {
           </form>
 
           <div className="border-t border-white/10 pt-8">
-            <p className="text-sm text-white/50">
+            <p className="text-sm text-white/50 mb-2">
               © {new Date().getFullYear()} Hunting Promos SA. All rights reserved.
             </p>
-            <p className="text-xs text-white/40 mt-2">
+            <p className="text-xs text-white/40">
               Exclusive Hunting Deals • Gear • Giveaways
             </p>
           </div>

@@ -5,17 +5,17 @@ export const HowItWorks = () => {
     {
       icon: Bell,
       title: "We Find the Best Hunting Deals",
-      description: "Our team scours South Africa for exclusive promotions on rifles, optics, apparel, and gear you actually need.",
+      description: "Our team scours South Africa for exclusive promotions on rifles, optics, apparel, and real gear hunters use.",
     },
     {
       icon: Target,
       title: "You Get Weekly Promos by Email",
-      description: "Every week, the top deals land in your inbox. No searching, no hassle – just real savings on quality gear.",
+      description: "Every week, the top deals land in your inbox — no searching, no hassle, just savings.",
     },
     {
       icon: Trophy,
       title: "Exclusive Giveaways for Subscribers",
-      description: "Enter monthly giveaways for free hunting equipment. Subscribers only – no one else gets these chances.",
+      description: "Monthly draws for hunting gear and accessories. Only subscribers qualify.",
     },
   ];
 
@@ -24,11 +24,8 @@ export const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">
-            How It Works
+            Three Simple Steps to Never Miss a Hunting Deal Again
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Three simple steps to never miss a hunting deal again
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
